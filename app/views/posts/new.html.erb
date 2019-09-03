@@ -22,7 +22,7 @@
     $("form").submit(function(event) {
       event.preventDefault();
       var values = $(this).serialize();
-      console.log(values);
+      debugger;
       var posting = $.post("/posts", values);
       posting.done(function(data) {
         var post = data;
