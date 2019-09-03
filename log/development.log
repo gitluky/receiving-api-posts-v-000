@@ -6763,3 +6763,11 @@ Processing by PostsController#create as HTML
 Completed 201 Created in 7ms (Views: 0.9ms | ActiveRecord: 3.7ms)
 
 
+Started GET "/posts/new" for 196.52.2.39 at 2019-09-03 00:50:31 +0000
+Cannot render console from 196.52.2.39! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
