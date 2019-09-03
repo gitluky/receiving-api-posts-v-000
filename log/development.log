@@ -6866,3 +6866,23 @@ Processing by PostsController#create as HTML
 Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 3.5ms)
 
 
+Started GET "/posts/new" for 196.52.2.39 at 2019-09-03 00:56:22 +0000
+Cannot render console from 196.52.2.39! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 287ms (Views: 254.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/posts" for 196.52.2.39 at 2019-09-03 00:56:33 +0000
+Cannot render console from 196.52.2.39! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dF5dtxZ/zqGRycuBhXRX89DnQw3GuTWnw6YOzN2jPkZ6EBL8BZyPlHY1HLXv8pLyqlHx2iCStOSFeosX3RQtWw==", "post"=>{"title"=>"title1", "description"=>"desc1"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "title1"], ["description", "desc1"], ["created_at", "2019-09-03 00:56:33.644085"], ["updated_at", "2019-09-03 00:56:33.644085"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered PostSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 200 OK in 84ms (Views: 76.9ms | ActiveRecord: 3.2ms)
+
+
