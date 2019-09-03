@@ -6790,3 +6790,14 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/posts" for 196.52.2.39 at 2019-09-03 00:50:51 +0000
+Cannot render console from 196.52.2.39! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xWF6QBk8mziD0hU22G8dLbbxvxiN5dCYxbKuJPoK0/HLLzULCt/aDWQuwgKy6dgszEcNz2vOUduDbiv/+r3A7A==", "post"=>{"title"=>"ffff", "description"=>"dddd"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ffff"], ["description", "dddd"], ["created_at", "2019-09-03 00:50:51.938030"], ["updated_at", "2019-09-03 00:50:51.938030"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered PostSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 201 Created in 11ms (Views: 1.3ms | ActiveRecord: 3.6ms)
+
+
