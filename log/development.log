@@ -6736,3 +6736,8 @@ Started GET "/posts/new" for 196.52.2.39 at 2019-09-03 00:49:01 +0000
 Cannot render console from 196.52.2.39! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 526ms (Views: 492.8ms | ActiveRecord: 0.9ms)
+
+
